@@ -1,0 +1,46 @@
+<!-- <div class="container">
+  <div class="title">
+    <h1>Aurela's Photo Gallery</h1>
+    <div class="text">Search easy & fast</div>
+  </div>
+  <div class="search-box">
+    <input type="text" [(ngModel)]="search" placeholder="Search" (input)="onSearch()">
+    <span class="search-icon"><i class="fas fa-search"></i></span>
+  </div>
+
+  <div class="gallery">
+    <div *ngFor="let image of flickrImages" class="image">
+      <img [src]="getImageUrl(image)" alt="Flickr Image" (click)="openHighResPhoto(image)">
+    </div>
+  </div>
+
+  <div class="loading-indicator" *ngIf="loading">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </div>
+</div> -->
+
+  <div class="container">
+    <div class="title">
+      <h1>Aurela's Photo Gallery</h1>
+      <div class="text">Search easy & fast</div>
+    </div>
+    <div class="search-box">
+      <input type="text" [(ngModel)]="search" placeholder="Search" (input)="onSearch()">
+      <span class="search-icon"><i class="fas fa-search"></i></span>
+    </div>
+  
+    <div class="gallery">
+      <div *ngFor="let image of flickrImages" class="image">
+        <img [src]="getImageUrl(image)" alt="Flickr Image" (click)="openHighResPhoto(image)" >
+      </div>
+    </div>
+  
+    <div class="loading-indicator" *ngIf="loading">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  
+  
+  
